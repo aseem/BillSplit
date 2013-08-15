@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90A5652517B09B5F00DC03A7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A5652417B09B5F00DC03A7 /* UIKit.framework */; };
+		90A5652717B09B5F00DC03A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A5652617B09B5F00DC03A7 /* Foundation.framework */; };
+		90A5652917B09B5F00DC03A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90A5652817B09B5F00DC03A7 /* CoreGraphics.framework */; };
+		90A5652F17B09B5F00DC03A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 90A5652D17B09B5F00DC03A7 /* InfoPlist.strings */; };
+		90A5653117B09B5F00DC03A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5653017B09B5F00DC03A7 /* main.m */; };
+		90A5653517B09B5F00DC03A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5653417B09B5F00DC03A7 /* AppDelegate.m */; };
+		90A5653717B09B5F00DC03A7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A5653617B09B5F00DC03A7 /* Default.png */; };
+		90A5653917B09B5F00DC03A7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A5653817B09B5F00DC03A7 /* Default@2x.png */; };
+		90A5653B17B09B5F00DC03A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 90A5653A17B09B5F00DC03A7 /* Default-568h@2x.png */; };
+		90A5654217B09BA700DC03A7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90A5654117B09BA700DC03A7 /* MainStoryboard.storyboard */; };
+		90A5654517B09D5300DC03A7 /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5654417B09D5300DC03A7 /* PeopleViewController.m */; };
+		90A5654817B0A1CF00DC03A7 /* PeopleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5654717B0A1CF00DC03A7 /* PeopleDetailViewController.m */; };
+		90A5654B17B0A57F00DC03A7 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5654A17B0A57F00DC03A7 /* Person.m */; };
+		90A5655117B0C26800DC03A7 /* ReceiptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5655017B0C26800DC03A7 /* ReceiptViewController.m */; };
+		90A5655417B0C32C00DC03A7 /* ReceiptDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5655317B0C32B00DC03A7 /* ReceiptDetailViewController.m */; };
+		90A5655917B0C3B000DC03A7 /* ReceiptItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5655817B0C3B000DC03A7 /* ReceiptItem.m */; };
+		90A5655C17B1AA0A00DC03A7 /* BillingEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5655B17B1AA0A00DC03A7 /* BillingEvent.m */; };
+		90A5655F17B1AD0500DC03A7 /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5655E17B1AD0400DC03A7 /* MainMenuViewController.m */; };
+		90A5656217B2CCBE00DC03A7 /* SummaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5656117B2CCBD00DC03A7 /* SummaryViewController.m */; };
+		90A5656717B2E21300DC03A7 /* TaxTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A5656617B2E21200DC03A7 /* TaxTipViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90A5652117B09B5F00DC03A7 /* BillSplit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillSplit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		90A5652417B09B5F00DC03A7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		90A5652617B09B5F00DC03A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90A5652817B09B5F00DC03A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		90A5652C17B09B5F00DC03A7 /* BillSplit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BillSplit-Info.plist"; sourceTree = "<group>"; };
+		90A5652E17B09B5F00DC03A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		90A5653017B09B5F00DC03A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90A5653217B09B5F00DC03A7 /* BillSplit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BillSplit-Prefix.pch"; sourceTree = "<group>"; };
+		90A5653317B09B5F00DC03A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		90A5653417B09B5F00DC03A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		90A5653617B09B5F00DC03A7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		90A5653817B09B5F00DC03A7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		90A5653A17B09B5F00DC03A7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		90A5654117B09BA700DC03A7 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		90A5654317B09D5300DC03A7 /* PeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
+		90A5654417B09D5300DC03A7 /* PeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleViewController.m; sourceTree = "<group>"; };
+		90A5654617B0A1CF00DC03A7 /* PeopleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleDetailViewController.h; sourceTree = "<group>"; };
+		90A5654717B0A1CF00DC03A7 /* PeopleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleDetailViewController.m; sourceTree = "<group>"; };
+		90A5654917B0A57F00DC03A7 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		90A5654A17B0A57F00DC03A7 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		90A5654F17B0C26700DC03A7 /* ReceiptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReceiptViewController.h; sourceTree = "<group>"; };
+		90A5655017B0C26800DC03A7 /* ReceiptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReceiptViewController.m; sourceTree = "<group>"; };
+		90A5655217B0C32B00DC03A7 /* ReceiptDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptDetailViewController.h; path = ../ReceiptDetailViewController.h; sourceTree = "<group>"; };
+		90A5655317B0C32B00DC03A7 /* ReceiptDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptDetailViewController.m; path = ../ReceiptDetailViewController.m; sourceTree = "<group>"; };
+		90A5655717B0C3B000DC03A7 /* ReceiptItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReceiptItem.h; path = ../ReceiptItem.h; sourceTree = "<group>"; };
+		90A5655817B0C3B000DC03A7 /* ReceiptItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReceiptItem.m; path = ../ReceiptItem.m; sourceTree = "<group>"; };
+		90A5655A17B1AA0900DC03A7 /* BillingEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BillingEvent.h; sourceTree = "<group>"; };
+		90A5655B17B1AA0A00DC03A7 /* BillingEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BillingEvent.m; sourceTree = "<group>"; };
+		90A5655D17B1AD0400DC03A7 /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		90A5655E17B1AD0400DC03A7 /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		90A5656017B2CCBD00DC03A7 /* SummaryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SummaryViewController.h; sourceTree = "<group>"; };
+		90A5656117B2CCBD00DC03A7 /* SummaryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SummaryViewController.m; sourceTree = "<group>"; };
+		90A5656517B2E21200DC03A7 /* TaxTipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxTipViewController.h; sourceTree = "<group>"; };
+		90A5656617B2E21200DC03A7 /* TaxTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxTipViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90A5651E17B09B5F00DC03A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A5652517B09B5F00DC03A7 /* UIKit.framework in Frameworks */,
+				90A5652717B09B5F00DC03A7 /* Foundation.framework in Frameworks */,
+				90A5652917B09B5F00DC03A7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90A5651817B09B5F00DC03A7 = {
+			isa = PBXGroup;
+			children = (
+				90A5652A17B09B5F00DC03A7 /* BillSplit */,
+				90A5652317B09B5F00DC03A7 /* Frameworks */,
+				90A5652217B09B5F00DC03A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90A5652217B09B5F00DC03A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90A5652117B09B5F00DC03A7 /* BillSplit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90A5652317B09B5F00DC03A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90A5652417B09B5F00DC03A7 /* UIKit.framework */,
+				90A5652617B09B5F00DC03A7 /* Foundation.framework */,
+				90A5652817B09B5F00DC03A7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90A5652A17B09B5F00DC03A7 /* BillSplit */ = {
+			isa = PBXGroup;
+			children = (
+				90A5656317B2E00600DC03A7 /* Main Menu */,
+				90A5656B17B312C400DC03A7 /* Tax and Tip */,
+				90A5656417B2E01A00DC03A7 /* Summary */,
+				90A5655617B0C35F00DC03A7 /* Receipt */,
+				90A5655517B0C33A00DC03A7 /* People */,
+				90A5654117B09BA700DC03A7 /* MainStoryboard.storyboard */,
+				90A5653317B09B5F00DC03A7 /* AppDelegate.h */,
+				90A5653417B09B5F00DC03A7 /* AppDelegate.m */,
+				90A5652B17B09B5F00DC03A7 /* Supporting Files */,
+			);
+			path = BillSplit;
+			sourceTree = "<group>";
+		};
+		90A5652B17B09B5F00DC03A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90A5652C17B09B5F00DC03A7 /* BillSplit-Info.plist */,
+				90A5652D17B09B5F00DC03A7 /* InfoPlist.strings */,
+				90A5653017B09B5F00DC03A7 /* main.m */,
+				90A5653217B09B5F00DC03A7 /* BillSplit-Prefix.pch */,
+				90A5653617B09B5F00DC03A7 /* Default.png */,
+				90A5653817B09B5F00DC03A7 /* Default@2x.png */,
+				90A5653A17B09B5F00DC03A7 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		90A5655517B0C33A00DC03A7 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				90A5654617B0A1CF00DC03A7 /* PeopleDetailViewController.h */,
+				90A5654717B0A1CF00DC03A7 /* PeopleDetailViewController.m */,
+				90A5654317B09D5300DC03A7 /* PeopleViewController.h */,
+				90A5654417B09D5300DC03A7 /* PeopleViewController.m */,
+				90A5654917B0A57F00DC03A7 /* Person.h */,
+				90A5654A17B0A57F00DC03A7 /* Person.m */,
+			);
+			name = People;
+			sourceTree = "<group>";
+		};
+		90A5655617B0C35F00DC03A7 /* Receipt */ = {
+			isa = PBXGroup;
+			children = (
+				90A5655217B0C32B00DC03A7 /* ReceiptDetailViewController.h */,
+				90A5655317B0C32B00DC03A7 /* ReceiptDetailViewController.m */,
+				90A5654F17B0C26700DC03A7 /* ReceiptViewController.h */,
+				90A5655017B0C26800DC03A7 /* ReceiptViewController.m */,
+				90A5655717B0C3B000DC03A7 /* ReceiptItem.h */,
+				90A5655817B0C3B000DC03A7 /* ReceiptItem.m */,
+			);
+			name = Receipt;
+			sourceTree = "<group>";
+		};
+		90A5656317B2E00600DC03A7 /* Main Menu */ = {
+			isa = PBXGroup;
+			children = (
+				90A5655A17B1AA0900DC03A7 /* BillingEvent.h */,
+				90A5655B17B1AA0A00DC03A7 /* BillingEvent.m */,
+				90A5655D17B1AD0400DC03A7 /* MainMenuViewController.h */,
+				90A5655E17B1AD0400DC03A7 /* MainMenuViewController.m */,
+			);
+			name = "Main Menu";
+			sourceTree = "<group>";
+		};
+		90A5656417B2E01A00DC03A7 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				90A5656017B2CCBD00DC03A7 /* SummaryViewController.h */,
+				90A5656117B2CCBD00DC03A7 /* SummaryViewController.m */,
+			);
+			name = Summary;
+			sourceTree = "<group>";
+		};
+		90A5656B17B312C400DC03A7 /* Tax and Tip */ = {
+			isa = PBXGroup;
+			children = (
+				90A5656517B2E21200DC03A7 /* TaxTipViewController.h */,
+				90A5656617B2E21200DC03A7 /* TaxTipViewController.m */,
+			);
+			name = "Tax and Tip";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		90A5652017B09B5F00DC03A7 /* BillSplit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90A5653E17B09B5F00DC03A7 /* Build configuration list for PBXNativeTarget "BillSplit" */;
+			buildPhases = (
+				90A5651D17B09B5F00DC03A7 /* Sources */,
+				90A5651E17B09B5F00DC03A7 /* Frameworks */,
+				90A5651F17B09B5F00DC03A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillSplit;
+			productName = BillSplit;
+			productReference = 90A5652117B09B5F00DC03A7 /* BillSplit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90A5651917B09B5F00DC03A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Harvard University";
+			};
+			buildConfigurationList = 90A5651C17B09B5F00DC03A7 /* Build configuration list for PBXProject "BillSplit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90A5651817B09B5F00DC03A7;
+			productRefGroup = 90A5652217B09B5F00DC03A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90A5652017B09B5F00DC03A7 /* BillSplit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		90A5651F17B09B5F00DC03A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A5652F17B09B5F00DC03A7 /* InfoPlist.strings in Resources */,
+				90A5653717B09B5F00DC03A7 /* Default.png in Resources */,
+				90A5653917B09B5F00DC03A7 /* Default@2x.png in Resources */,
+				90A5653B17B09B5F00DC03A7 /* Default-568h@2x.png in Resources */,
+				90A5654217B09BA700DC03A7 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90A5651D17B09B5F00DC03A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90A5653117B09B5F00DC03A7 /* main.m in Sources */,
+				90A5653517B09B5F00DC03A7 /* AppDelegate.m in Sources */,
+				90A5654517B09D5300DC03A7 /* PeopleViewController.m in Sources */,
+				90A5654817B0A1CF00DC03A7 /* PeopleDetailViewController.m in Sources */,
+				90A5654B17B0A57F00DC03A7 /* Person.m in Sources */,
+				90A5655117B0C26800DC03A7 /* ReceiptViewController.m in Sources */,
+				90A5655417B0C32C00DC03A7 /* ReceiptDetailViewController.m in Sources */,
+				90A5655917B0C3B000DC03A7 /* ReceiptItem.m in Sources */,
+				90A5655C17B1AA0A00DC03A7 /* BillingEvent.m in Sources */,
+				90A5655F17B1AD0500DC03A7 /* MainMenuViewController.m in Sources */,
+				90A5656217B2CCBE00DC03A7 /* SummaryViewController.m in Sources */,
+				90A5656717B2E21300DC03A7 /* TaxTipViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		90A5652D17B09B5F00DC03A7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				90A5652E17B09B5F00DC03A7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		90A5653C17B09B5F00DC03A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		90A5653D17B09B5F00DC03A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90A5653F17B09B5F00DC03A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BillSplit/BillSplit-Prefix.pch";
+				INFOPLIST_FILE = "BillSplit/BillSplit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		90A5654017B09B5F00DC03A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BillSplit/BillSplit-Prefix.pch";
+				INFOPLIST_FILE = "BillSplit/BillSplit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90A5651C17B09B5F00DC03A7 /* Build configuration list for PBXProject "BillSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90A5653C17B09B5F00DC03A7 /* Debug */,
+				90A5653D17B09B5F00DC03A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90A5653E17B09B5F00DC03A7 /* Build configuration list for PBXNativeTarget "BillSplit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90A5653F17B09B5F00DC03A7 /* Debug */,
+				90A5654017B09B5F00DC03A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90A5651917B09B5F00DC03A7 /* Project object */;
+}
