@@ -45,16 +45,19 @@
 }
 
 
-
+// Called when the user hits the return key for a text field
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    // dismiss the keyboard
     [textField resignFirstResponder];
     
     return YES;
 }
 
-
-- (void)textFieldDidBeginEditing:(UITextField *)textField {
+// Called when the user begins editing a text field
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    // select the current text
     [textField selectAll:self];
 }
 

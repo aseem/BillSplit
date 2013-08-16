@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface PeopleViewController : UITableViewController
+@interface PeopleViewController : UITableViewController <UITextFieldDelegate>
 
 
 // properties for sending/receiving data between controllers

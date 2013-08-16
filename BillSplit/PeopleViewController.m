@@ -48,6 +48,34 @@
     [_myEvent saveState];
 }
 
+// Called when the user hits the return key for a text field
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    // dismiss the keyboard
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
+// Called when the user finishes editing the text field
+- (void) textFieldDidEndEditing:(UITextField *)textField
+{
+    // save the name of person that is in the text field
+    UITableViewCell *cell = (UITableViewCell *) textField.superview;
+    NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
+    Person *myPerson = [_myEvent.people objectAtIndex:indexPath.row];
+    myPerson.name = (NSMutableString *)textField.text;
+
+}
+
+// Called when the user begins editing a text field
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    // select all the text in the text field
+    [textField selectAll:self];
+}
+
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -75,11 +103,18 @@
                                                             forIndexPath:indexPath];
     
     // Configure the cell...
-    UILabel *cellLabel = (UILabel *)[cell viewWithTag:1];
+    UITextField *cellLabel = (UITextField *)[cell viewWithTag:1];
     Person *myPerson = [_myEvent.people objectAtIndex:indexPath.row];
     cellLabel.text = [myPerson name];
     
-    // Add a checkmark if this is our currently chosen user.
+    // set the delegate of all the text fields to the current view controller
+    // and customize the field
+    cellLabel.delegate = self;
+    cellLabel.keyboardType = UIKeyboardTypeAlphabet;
+    cellLabel.enabled = NO;
+    
+    // Change to red text if this is our currently chosen user.
+    // otherwise black text
     if (_myEvent.selectedPerson == indexPath.row)
     {
         [cellLabel setTextColor:[UIColor redColor]];
@@ -156,13 +191,13 @@
             NSIndexPath *oldIndexPath = [NSIndexPath indexPathForRow:_myEvent.selectedPerson
                                                        inSection:0];
             UITableViewCell *oldCell = [tableView cellForRowAtIndexPath:oldIndexPath];
-            UILabel *oldCellLabel = (UILabel *)[oldCell viewWithTag:1];
+            UITextField *oldCellLabel = (UITextField *)[oldCell viewWithTag:1];
             [oldCellLabel setTextColor:[UIColor blackColor]];
         }
         
         // update the text color to the currently chosen cell and update the Event state
         UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-        UILabel *newCellLabel = (UILabel *)[cell viewWithTag:1];
+        UITextField *newCellLabel = (UITextField *)[cell viewWithTag:1];
         [newCellLabel setTextColor:[UIColor redColor]];
         _myEvent.selectedPerson = indexPath.row;
     }
